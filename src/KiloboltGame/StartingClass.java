@@ -20,7 +20,7 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 	public void init() {
 
 		setSize(800, 480);
-		setBackground(Color.BLACK);
+		setBackground(Color.black);
 		setFocusable(true);
 		addKeyListener(this);
 		Frame frame = (Frame) this.getParent().getParent();
@@ -33,8 +33,7 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 
 		// Image Setups
 		character = getImage(base, "data/character.png");
-		System.out.println(base);
-		System.out.println(base);
+
 	}
 
 	@Override
@@ -86,7 +85,7 @@ public class StartingClass extends Applet implements Runnable, KeyListener {
 
 	@Override
 	public void paint(Graphics g) {
-		g.drawImage(character, robot.getCenterX() - 61, robot.getCenterY() - 63, this);
+		g.drawImage(character, robot.getCenterX()-61, robot.getCenterY()-63, this);
 
 	}
 
